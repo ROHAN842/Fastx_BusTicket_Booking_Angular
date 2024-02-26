@@ -1,0 +1,65 @@
+<app-header></app-header>
+
+
+<h4 class="heading">
+    Sign Up
+</h4>
+
+<div class="userForm-wrapper d-flex justify-content-center">
+    <div class="userForm flex-lg-row flex-column d-flex justify-content-center align-items-center border rounded p-3">
+        <div class="login-img d-none d-lg-block">
+            <img src="/assets/login-rebbeca.svg" alt="" class="img-fluid">
+        </div>
+        <form #userform="ngForm" class="col-lg-5 col-md-8 col-10">
+            <fieldset>
+                <div>
+                    <p class="text-center">Existing User? <a routerLink="/login">Login Here</a></p>
+                </div>
+
+                <div class="mb-3">
+                    <label for="firstName" class="form-label">First Name</label>
+                    <input type="text" class="form-control" id="firstName" name="firstName" minlength="3" required>
+                    <div class="invalid-feedback">
+                        Invalid first name. Must be at least 3 letters
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <label for="lastName" class="form-label">Last Name</label>
+                    <input type="text" class="form-control" id="lastName" name="lastName" minlength="2" required>
+                    <div class="invalid-feedback">
+                        Invalid last name. Must be at least 2 letters
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="email" name="email" pattern="[^@]+@[^@]+" required>
+                    <div class="invalid-feedback">
+                        Invalid email
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <label for="password" class="form-label">Password</label>
+                    <input type="password" class="form-control" name="password" id="password" minlength="5" required>
+                    <div class="invalid-feedback">
+                        Password must be at least 5 characters.
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <label for="confirm_password" class="form-label">Confirm Password</label>
+                    <input type="password" class="form-control" name="confirmPassword" id="confirm_password" minlength="5" required>
+                </div>
+
+                <button id="signupp" type="submit" class="btn btn-default form-control">
+                    Sign Up
+                </button>
+            </fieldset>
+        </form>
+    </div>
+</div>
+
+<br><br><br><br><br>
+<app-footer></app-footer>

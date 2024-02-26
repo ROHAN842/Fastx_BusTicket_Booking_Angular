@@ -1,0 +1,43 @@
+.ticket {
+    box-shadow: 3px 3px 5px 6px #ccc;
+}
+
+.heading {
+    text-align: center;
+}
+
+.route {
+    background-color: blanchedalmond;
+}
+
+.passenger {
+    border: cadetblue 1px solid;
+}
+
+.condition {
+    color: crimson;
+}
+
+#bck {
+    background-color: skyblue;
+}
+
+#bck1 {
+    text-align: center;
+}
+
+
+/* CSS to center the button horizontally */
+
+.mx-auto {
+    display: flex;
+    justify-content: center;
+}
+
+
+/* Optional: If you want to center the button vertically as well */
+
+.my-3 {
+    display: flex;
+    align-items: center;
+}

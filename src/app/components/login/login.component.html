@@ -1,0 +1,36 @@
+<app-header></app-header>
+<br><br>
+<h4 class="heading">
+    Login
+</h4>
+<div class="userForm-wrapper d-flex justify-content-center">
+    <div class="userForm flex-lg-row flex-column d-flex justify-content-center align-items-center border rounded p-3">
+        <div class="login-img d-none d-lg-block">
+            <img src="/assets/login-rebbeca.svg" alt="" class="img-fluid">
+        </div>
+        <form class="col-lg-5 col-md-8 col-10">
+            <fieldset>
+                <div>
+                    <p class="text-center">
+                        New User? <a [routerLink]="['/signup']">SignUp Here</a>
+                    </p>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="email" name="email">
+                </div>
+                <div class="mb-3">
+                    <label for="password" class="form-label">Password</label>
+                    <input type="password" class="form-control" name="password" id="password">
+                </div>
+                <button id="signupp" type="submit" class="btn btn-default form-control">
+                    Login
+                </button>
+            </fieldset>
+        </form>
+    </div>
+</div>
+
+
+<br><br><br><br><br><br><br><br><br>
+<app-footer></app-footer>

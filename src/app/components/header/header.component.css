@@ -1,0 +1,35 @@
+.navbar {
+    background-color: #f8f9fa;
+    padding: 10px;
+}
+
+.navbar-brand {
+    font-size: 20px;
+    font-weight: bold;
+    color: #35156b;
+}
+
+.navbar-nav .nav-link {
+    font-size: 16px;
+    color: #35156b;
+    margin-right: 10px;
+}
+
+.navbar-nav .nav-link.active {
+    font-weight: bold;
+}
+
+.dropdown-menu {
+    background-color: #f8f9fa;
+    padding-left: 10px;
+    text-align: left;
+}
+
+.dropdown-menu a {
+    color: #35156b;
+    text-decoration: none;
+}
+
+.dropdown-menu a:hover {
+    background-color: #e9ecef;
+}
